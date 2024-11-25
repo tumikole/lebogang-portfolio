@@ -1,14 +1,8 @@
 [build]
-  base = "./frontend"          # Frontend directory
+  base = "./user-interface"          # user-interface directory
   publish = "build"            # Build output directory
   command = "npm run build"    # Build command
-  functions = "backend/netlify/functions"
-
-
-[functions]
-  directory = "backend/netlify/functions"  # Directory for Netlify functions
-  node_bundler = "esbuild"                 # Use esbuild for bundling functions
-
+  
 [[redirects]]
   from = "/api/*"
   to = "/.netlify/functions/:splat"

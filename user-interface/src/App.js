@@ -33,7 +33,7 @@ function App() {
         Play Video 3
       </button>
 
-      <div style={{marginTop: "3rem",marginLeft: "3rem",marginRight: "3rem"}}>
+      <div style={{marginTop: "3rem"}}>
         {activeVideo !== null && (
           <video
             key={activeVideo} // Forces React to recreate the element when the key changes
